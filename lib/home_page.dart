@@ -41,379 +41,380 @@ class _MyHomePageState extends State<MyHomePage> {
                 child: Column(
                   children: [
                     Expanded(
-                        child: Padding(
-                      padding: const EdgeInsets.all(10),
-                      child: SingleChildScrollView(
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            //common
-                            const Text(
-                              "Common",
-                              style: TextStyle(
-                                color: Colors.redAccent,
-                                fontWeight: FontWeight.bold,
-                                fontSize: 15,
+                      child: Padding(
+                        padding: const EdgeInsets.all(8),
+                        child: SingleChildScrollView(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              //common
+                              const Text(
+                                "Common",
+                                style: TextStyle(
+                                  color: Colors.redAccent,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 15,
+                                ),
                               ),
-                            ),
-                            const SizedBox(height: 10),
-                            Container(
-                              padding: const EdgeInsets.all(10),
-                              child: Row(
-                                children: [
-                                  Icon(
-                                    Icons.language_outlined,
-                                    size: 30,
-                                    color: Colors.grey.shade700,
-                                  ),
-                                  const SizedBox(width: 20),
-                                  Column(
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.start,
-                                    children: [
-                                      const Text(
-                                        "Language",
-                                        style: TextStyle(
-                                          fontSize: 20,
-                                          fontWeight: FontWeight.bold,
+                              const SizedBox(height: 10),
+                              Container(
+                                padding: const EdgeInsets.all(8),
+                                child: Row(
+                                  children: [
+                                    Icon(
+                                      Icons.language_outlined,
+                                      size: 30,
+                                      color: Colors.grey.shade700,
+                                    ),
+                                    const SizedBox(width: 20),
+                                    Column(
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                      children: [
+                                        const Text(
+                                          "Language",
+                                          style: TextStyle(
+                                            fontSize: 17,
+                                            fontWeight: FontWeight.bold,
+                                          ),
                                         ),
-                                      ),
-                                      Text(
-                                        "English",
-                                        style: TextStyle(
-                                          fontSize: 15,
-                                          color: Colors.grey.shade500,
-                                          fontWeight: FontWeight.bold,
+                                        Text(
+                                          "English",
+                                          style: TextStyle(
+                                            fontSize: 14,
+                                            color: Colors.grey.shade500,
+                                            fontWeight: FontWeight.bold,
+                                          ),
+                                        )
+                                      ],
+                                    )
+                                  ],
+                                ),
+                              ),
+                              const SizedBox(height: 10),
+                              Container(
+                                padding: const EdgeInsets.all(8),
+                                child: Row(
+                                  children: [
+                                    Icon(
+                                      Icons.cloud_outlined,
+                                      size: 30,
+                                      color: Colors.grey.shade700,
+                                    ),
+                                    const SizedBox(width: 20),
+                                    Column(
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                      children: [
+                                        const Text(
+                                          "Environment",
+                                          style: TextStyle(
+                                            fontSize: 17,
+                                            fontWeight: FontWeight.bold,
+                                          ),
                                         ),
-                                      )
-                                    ],
-                                  )
-                                ],
+                                        Text(
+                                          "production",
+                                          style: TextStyle(
+                                            fontSize: 14,
+                                            color: Colors.grey.shade500,
+                                            fontWeight: FontWeight.bold,
+                                          ),
+                                        )
+                                      ],
+                                    )
+                                  ],
+                                ),
                               ),
-                            ),
-                            const SizedBox(height: 10),
-                            Container(
-                              padding: const EdgeInsets.all(10),
-                              child: Row(
-                                children: [
-                                  Icon(
-                                    Icons.cloud_outlined,
-                                    size: 30,
-                                    color: Colors.grey.shade700,
-                                  ),
-                                  const SizedBox(width: 20),
-                                  Column(
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.start,
-                                    children: [
-                                      const Text(
-                                        "Environment",
-                                        style: TextStyle(
-                                          fontSize: 20,
-                                          fontWeight: FontWeight.bold,
+                              const SizedBox(height: 20),
+                              //Account
+                              const Text(
+                                "Account",
+                                style: TextStyle(
+                                  color: Colors.redAccent,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 15,
+                                ),
+                              ),
+                              const SizedBox(height: 10),
+                              Container(
+                                padding: const EdgeInsets.all(8),
+                                child: Row(
+                                  children: [
+                                    Icon(
+                                      Icons.phone,
+                                      size: 30,
+                                      color: Colors.grey.shade700,
+                                    ),
+                                    const SizedBox(width: 20),
+                                    Column(
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                      children: const [
+                                        Text(
+                                          "Phone number",
+                                          style: TextStyle(
+                                            fontSize: 17,
+                                            fontWeight: FontWeight.bold,
+                                          ),
                                         ),
-                                      ),
-                                      Text(
-                                        "production",
-                                        style: TextStyle(
-                                          fontSize: 15,
-                                          color: Colors.grey.shade500,
-                                          fontWeight: FontWeight.bold,
+                                      ],
+                                    )
+                                  ],
+                                ),
+                              ),
+                              const SizedBox(height: 10),
+                              Container(
+                                padding: const EdgeInsets.all(8),
+                                child: Row(
+                                  children: [
+                                    Icon(
+                                      Icons.email,
+                                      size: 30,
+                                      color: Colors.grey.shade700,
+                                    ),
+                                    const SizedBox(width: 20),
+                                    Column(
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                      children: const [
+                                        Text(
+                                          "Email",
+                                          style: TextStyle(
+                                            fontSize: 17,
+                                            fontWeight: FontWeight.bold,
+                                          ),
                                         ),
-                                      )
-                                    ],
-                                  )
-                                ],
+                                      ],
+                                    )
+                                  ],
+                                ),
                               ),
-                            ),
-                            const SizedBox(height: 20),
-                            //Account
-                            const Text(
-                              "Account",
-                              style: TextStyle(
-                                color: Colors.redAccent,
-                                fontWeight: FontWeight.bold,
-                                fontSize: 15,
-                              ),
-                            ),
-                            const SizedBox(height: 10),
-                            Container(
-                              padding: const EdgeInsets.all(10),
-                              child: Row(
-                                children: [
-                                  Icon(
-                                    Icons.phone,
-                                    size: 30,
-                                    color: Colors.grey.shade700,
-                                  ),
-                                  const SizedBox(width: 20),
-                                  Column(
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.start,
-                                    children: const [
-                                      Text(
-                                        "Phone number",
-                                        style: TextStyle(
-                                          fontSize: 20,
-                                          fontWeight: FontWeight.bold,
+                              const SizedBox(height: 10),
+                              Container(
+                                padding: const EdgeInsets.all(8),
+                                child: Row(
+                                  children: [
+                                    Icon(
+                                      Icons.login_outlined,
+                                      size: 30,
+                                      color: Colors.grey.shade700,
+                                    ),
+                                    const SizedBox(width: 20),
+                                    Column(
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                      children: [
+                                        const Text(
+                                          "Enviroment",
+                                          style: TextStyle(
+                                            fontSize: 17,
+                                            fontWeight: FontWeight.bold,
+                                          ),
                                         ),
-                                      ),
-                                    ],
-                                  )
-                                ],
+                                        Text(
+                                          "production",
+                                          style: TextStyle(
+                                            fontSize: 14,
+                                            color: Colors.grey.shade500,
+                                            fontWeight: FontWeight.bold,
+                                          ),
+                                        )
+                                      ],
+                                    )
+                                  ],
+                                ),
                               ),
-                            ),
-                            const SizedBox(height: 10),
-                            Container(
-                              padding: const EdgeInsets.all(10),
-                              child: Row(
-                                children: [
-                                  Icon(
-                                    Icons.email,
-                                    size: 30,
-                                    color: Colors.grey.shade700,
-                                  ),
-                                  const SizedBox(width: 20),
-                                  Column(
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.start,
-                                    children: const [
-                                      Text(
-                                        "Email",
-                                        style: TextStyle(
-                                          fontSize: 20,
-                                          fontWeight: FontWeight.bold,
+                              const SizedBox(height: 20),
+                              //Security
+                              const Text(
+                                "Security",
+                                style: TextStyle(
+                                  color: Colors.redAccent,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 15,
+                                ),
+                              ),
+                              const SizedBox(height: 10),
+                              Container(
+                                padding: const EdgeInsets.all(8),
+                                child: Row(
+                                  children: [
+                                    Icon(
+                                      Icons.phonelink_lock_outlined,
+                                      size: 30,
+                                      color: Colors.grey.shade700,
+                                    ),
+                                    const SizedBox(width: 20),
+                                    Column(
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                      children: const [
+                                        Text(
+                                          "Lockapp in background",
+                                          style: TextStyle(
+                                            fontSize: 17,
+                                            fontWeight: FontWeight.bold,
+                                          ),
                                         ),
-                                      ),
-                                    ],
-                                  )
-                                ],
+                                      ],
+                                    ),
+                                    Spacer(),
+                                    Switch(
+                                      value: lockAppSwitch,
+                                      activeColor: Colors.redAccent,
+                                      onChanged: (val) {
+                                        setState(() {
+                                          lockAppSwitch = val;
+                                        });
+                                      },
+                                    ),
+                                  ],
+                                ),
                               ),
-                            ),
-                            const SizedBox(height: 10),
-                            Container(
-                              padding: const EdgeInsets.all(10),
-                              child: Row(
-                                children: [
-                                  Icon(
-                                    Icons.login_outlined,
-                                    size: 30,
-                                    color: Colors.grey.shade700,
-                                  ),
-                                  const SizedBox(width: 20),
-                                  Column(
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.start,
-                                    children: [
-                                      const Text(
-                                        "Environment",
-                                        style: TextStyle(
-                                          fontSize: 20,
-                                          fontWeight: FontWeight.bold,
+                              const SizedBox(height: 10),
+                              Container(
+                                padding: const EdgeInsets.all(8),
+                                child: Row(
+                                  children: [
+                                    Icon(
+                                      Icons.fingerprint,
+                                      size: 30,
+                                      color: Colors.grey.shade700,
+                                    ),
+                                    const SizedBox(width: 20),
+                                    Column(
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                      children: const [
+                                        Text(
+                                          "Use fingerprint",
+                                          style: TextStyle(
+                                            fontSize: 17,
+                                            fontWeight: FontWeight.bold,
+                                          ),
                                         ),
-                                      ),
-                                      Text(
-                                        "production",
-                                        style: TextStyle(
-                                          fontSize: 15,
-                                          color: Colors.grey.shade500,
-                                          fontWeight: FontWeight.bold,
+                                      ],
+                                    ),
+                                    const Spacer(),
+                                    Switch(
+                                      value: fingerprintSwitch,
+                                      activeColor: Colors.redAccent,
+                                      onChanged: (val) {
+                                        setState(() {
+                                          fingerprintSwitch = val;
+                                        });
+                                      },
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              const SizedBox(height: 10),
+                              Container(
+                                padding: const EdgeInsets.all(8),
+                                child: Row(
+                                  children: [
+                                    Icon(
+                                      Icons.lock,
+                                      size: 30,
+                                      color: Colors.grey.shade700,
+                                    ),
+                                    const SizedBox(width: 20),
+                                    Column(
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                      children: const [
+                                        Text(
+                                          "Change password",
+                                          style: TextStyle(
+                                            fontSize: 17,
+                                            fontWeight: FontWeight.bold,
+                                          ),
                                         ),
-                                      )
-                                    ],
-                                  )
-                                ],
+                                      ],
+                                    ),
+                                    const Spacer(),
+                                    Switch(
+                                      value: changePasswordSwitch,
+                                      activeColor: Colors.redAccent,
+                                      onChanged: (val) {
+                                        setState(() {
+                                          changePasswordSwitch = val;
+                                        });
+                                      },
+                                    ),
+                                  ],
+                                ),
                               ),
-                            ),
-                            const SizedBox(height: 20),
-                            //Security
-                            const Text(
-                              "Security",
-                              style: TextStyle(
-                                color: Colors.redAccent,
-                                fontWeight: FontWeight.bold,
-                                fontSize: 15,
+                              const SizedBox(height: 20),
+                              //misc
+                              const Text(
+                                "Misc",
+                                style: TextStyle(
+                                  color: Colors.redAccent,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 15,
+                                ),
                               ),
-                            ),
-                            const SizedBox(height: 10),
-                            Container(
-                              padding: const EdgeInsets.all(10),
-                              child: Row(
-                                children: [
-                                  Icon(
-                                    Icons.phonelink_lock_outlined,
-                                    size: 30,
-                                    color: Colors.grey.shade700,
-                                  ),
-                                  const SizedBox(width: 20),
-                                  Column(
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.start,
-                                    children: const [
-                                      Text(
-                                        "Lock app in background",
-                                        style: TextStyle(
-                                          fontSize: 20,
-                                          fontWeight: FontWeight.bold,
+                              const SizedBox(height: 10),
+                              Container(
+                                padding: const EdgeInsets.all(8),
+                                child: Row(
+                                  children: [
+                                    Icon(
+                                      Icons.security_rounded,
+                                      size: 30,
+                                      color: Colors.grey.shade700,
+                                    ),
+                                    const SizedBox(width: 20),
+                                    Column(
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                      children: const [
+                                        Text(
+                                          "Terms of Service",
+                                          style: TextStyle(
+                                            fontSize: 17,
+                                            fontWeight: FontWeight.bold,
+                                          ),
                                         ),
-                                      ),
-                                    ],
-                                  ),
-                                  const Spacer(),
-                                  Switch(
-                                    value: lockAppSwitch,
-                                    activeColor: Colors.redAccent,
-                                    onChanged: (val) {
-                                      setState(() {
-                                        lockAppSwitch = val;
-                                      });
-                                    },
-                                  ),
-                                ],
+                                      ],
+                                    )
+                                  ],
+                                ),
                               ),
-                            ),
-                            const SizedBox(height: 10),
-                            Container(
-                              padding: const EdgeInsets.all(10),
-                              child: Row(
-                                children: [
-                                  Icon(
-                                    Icons.fingerprint,
-                                    size: 30,
-                                    color: Colors.grey.shade700,
-                                  ),
-                                  const SizedBox(width: 20),
-                                  Column(
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.start,
-                                    children: const [
-                                      Text(
-                                        "Use fingerprint",
-                                        style: TextStyle(
-                                          fontSize: 20,
-                                          fontWeight: FontWeight.bold,
+                              const SizedBox(height: 10),
+                              Container(
+                                padding: const EdgeInsets.all(8),
+                                child: Row(
+                                  children: [
+                                    Icon(
+                                      Icons.source_rounded,
+                                      size: 30,
+                                      color: Colors.grey.shade700,
+                                    ),
+                                    const SizedBox(width: 20),
+                                    Column(
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                      children: const [
+                                        Text(
+                                          "Open source licenses",
+                                          style: TextStyle(
+                                            fontSize: 17,
+                                            fontWeight: FontWeight.bold,
+                                          ),
                                         ),
-                                      ),
-                                    ],
-                                  ),
-                                  const Spacer(),
-                                  Switch(
-                                    value: fingerprintSwitch,
-                                    activeColor: Colors.redAccent,
-                                    onChanged: (val) {
-                                      setState(() {
-                                        fingerprintSwitch = val;
-                                      });
-                                    },
-                                  ),
-                                ],
+                                      ],
+                                    )
+                                  ],
+                                ),
                               ),
-                            ),
-                            const SizedBox(height: 10),
-                            Container(
-                              padding: const EdgeInsets.all(10),
-                              child: Row(
-                                children: [
-                                  Icon(
-                                    Icons.lock,
-                                    size: 30,
-                                    color: Colors.grey.shade700,
-                                  ),
-                                  const SizedBox(width: 20),
-                                  Column(
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.start,
-                                    children: const [
-                                      Text(
-                                        "Change password",
-                                        style: TextStyle(
-                                          fontSize: 20,
-                                          fontWeight: FontWeight.bold,
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                  const Spacer(),
-                                  Switch(
-                                    value: changePasswordSwitch,
-                                    activeColor: Colors.redAccent,
-                                    onChanged: (val) {
-                                      setState(() {
-                                        changePasswordSwitch = val;
-                                      });
-                                    },
-                                  ),
-                                ],
-                              ),
-                            ),
-                            const SizedBox(height: 20),
-                            //misc
-                            const Text(
-                              "Misc",
-                              style: TextStyle(
-                                color: Colors.redAccent,
-                                fontWeight: FontWeight.bold,
-                                fontSize: 15,
-                              ),
-                            ),
-                            const SizedBox(height: 10),
-                            Container(
-                              padding: const EdgeInsets.all(10),
-                              child: Row(
-                                children: [
-                                  Icon(
-                                    Icons.security_rounded,
-                                    size: 30,
-                                    color: Colors.grey.shade700,
-                                  ),
-                                  const SizedBox(width: 20),
-                                  Column(
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.start,
-                                    children: const [
-                                      Text(
-                                        "Terms of Service",
-                                        style: TextStyle(
-                                          fontSize: 20,
-                                          fontWeight: FontWeight.bold,
-                                        ),
-                                      ),
-                                    ],
-                                  )
-                                ],
-                              ),
-                            ),
-                            const SizedBox(height: 10),
-                            Container(
-                              padding: const EdgeInsets.all(10),
-                              child: Row(
-                                children: [
-                                  Icon(
-                                    Icons.source_rounded,
-                                    size: 30,
-                                    color: Colors.grey.shade700,
-                                  ),
-                                  const SizedBox(width: 20),
-                                  Column(
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.start,
-                                    children: const [
-                                      Text(
-                                        "Open source licenses",
-                                        style: TextStyle(
-                                          fontSize: 20,
-                                          fontWeight: FontWeight.bold,
-                                        ),
-                                      ),
-                                    ],
-                                  )
-                                ],
-                              ),
-                            ),
-                          ],
+                            ],
+                          ),
                         ),
                       ),
-                    )),
+                    ),
                   ],
                 ),
               ),
@@ -451,7 +452,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         children: [
                           //common
                           Padding(
-                            padding: const EdgeInsets.all(10),
+                            padding: const EdgeInsets.all(8),
                             child: Row(
                               children: const [
                                 Text(
@@ -479,10 +480,11 @@ class _MyHomePageState extends State<MyHomePage> {
                                     color: Colors.grey.shade700,
                                   ),
                                   const SizedBox(width: 20),
-                                  const Text(
+                                  Text(
                                     "Language",
                                     style: TextStyle(
-                                      fontSize: 20,
+                                      color: Colors.black,
+                                      fontSize: 17,
                                       fontWeight: FontWeight.bold,
                                     ),
                                   ),
@@ -490,7 +492,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                   Text(
                                     "English",
                                     style: TextStyle(
-                                      fontSize: 15,
+                                      fontSize: 14,
                                       color: Colors.grey.shade500,
                                       fontWeight: FontWeight.bold,
                                     ),
@@ -520,7 +522,8 @@ class _MyHomePageState extends State<MyHomePage> {
                                   const Text(
                                     "Environment",
                                     style: TextStyle(
-                                      fontSize: 20,
+                                      color: Colors.black,
+                                      fontSize: 17,
                                       fontWeight: FontWeight.bold,
                                     ),
                                   ),
@@ -528,7 +531,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                   Text(
                                     "Production",
                                     style: TextStyle(
-                                      fontSize: 15,
+                                      fontSize: 14,
                                       color: Colors.grey.shade500,
                                       fontWeight: FontWeight.bold,
                                     ),
@@ -544,7 +547,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           const SizedBox(height: 20),
                           //account
                           Padding(
-                            padding: const EdgeInsets.all(10),
+                            padding: const EdgeInsets.all(8),
                             child: Row(
                               children: const [
                                 Text(
@@ -575,7 +578,8 @@ class _MyHomePageState extends State<MyHomePage> {
                                   const Text(
                                     "Phone number",
                                     style: TextStyle(
-                                      fontSize: 20,
+                                      color: Colors.black,
+                                      fontSize: 17,
                                       fontWeight: FontWeight.bold,
                                     ),
                                   ),
@@ -605,7 +609,8 @@ class _MyHomePageState extends State<MyHomePage> {
                                   const Text(
                                     "Email",
                                     style: TextStyle(
-                                      fontSize: 20,
+                                      color: Colors.black,
+                                      fontSize: 17,
                                       fontWeight: FontWeight.bold,
                                     ),
                                   ),
@@ -635,7 +640,8 @@ class _MyHomePageState extends State<MyHomePage> {
                                   const Text(
                                     "Sign out",
                                     style: TextStyle(
-                                      fontSize: 20,
+                                      color: Colors.black,
+                                      fontSize: 17,
                                       fontWeight: FontWeight.bold,
                                     ),
                                   ),
@@ -651,7 +657,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           const SizedBox(height: 20),
                           //Security
                           Padding(
-                            padding: const EdgeInsets.all(10),
+                            padding: const EdgeInsets.all(8),
                             child: Row(
                               children: const [
                                 Text(
@@ -682,7 +688,8 @@ class _MyHomePageState extends State<MyHomePage> {
                                   const Text(
                                     "Lock app in background",
                                     style: TextStyle(
-                                      fontSize: 20,
+                                      color: Colors.black,
+                                      fontSize: 17,
                                       fontWeight: FontWeight.bold,
                                     ),
                                   ),
@@ -717,7 +724,8 @@ class _MyHomePageState extends State<MyHomePage> {
                                   const Text(
                                     "Use fingerprint",
                                     style: TextStyle(
-                                      fontSize: 20,
+                                      color: Colors.black,
+                                      fontSize: 17,
                                       fontWeight: FontWeight.bold,
                                     ),
                                   ),
@@ -752,7 +760,8 @@ class _MyHomePageState extends State<MyHomePage> {
                                   const Text(
                                     "Change password",
                                     style: TextStyle(
-                                      fontSize: 20,
+                                      color: Colors.black,
+                                      fontSize: 17,
                                       fontWeight: FontWeight.bold,
                                     ),
                                   ),
@@ -773,7 +782,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           const SizedBox(height: 20),
                           //Misc
                           Padding(
-                            padding: const EdgeInsets.all(10),
+                            padding: const EdgeInsets.all(8),
                             child: Row(
                               children: const [
                                 Text(
@@ -804,7 +813,8 @@ class _MyHomePageState extends State<MyHomePage> {
                                   const Text(
                                     "Terms of Service",
                                     style: TextStyle(
-                                      fontSize: 20,
+                                      color: Colors.black,
+                                      fontSize: 17,
                                       fontWeight: FontWeight.bold,
                                     ),
                                   ),
@@ -834,7 +844,8 @@ class _MyHomePageState extends State<MyHomePage> {
                                   const Text(
                                     "Open source licenses",
                                     style: TextStyle(
-                                      fontSize: 20,
+                                      color: Colors.black,
+                                      fontSize: 17,
                                       fontWeight: FontWeight.bold,
                                     ),
                                   ),
