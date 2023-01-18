@@ -10,12 +10,10 @@ class Splash_page extends StatefulWidget {
 }
 
 class _Splash_pageState extends State<Splash_page> {
-
   changeScreen() {
-    Timer.periodic(const Duration(seconds: 2), (timer) {
+    Timer.periodic(const Duration(seconds: 5), (timer) {
       Navigator.of(context).pushReplacementNamed('Stepper_page');
-    }
-    );
+    });
   }
 
   @override
@@ -24,23 +22,18 @@ class _Splash_pageState extends State<Splash_page> {
     changeScreen();
   }
 
-
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       backgroundColor: Colors.white,
-      body: Center(
+      body: Container(
+        alignment: Alignment.topCenter,
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            SizedBox(
-              height: 300,
-            ),
-            Image(
-              image: NetworkImage(
-                  "https://th.bing.com/th/id/OIP.10RECXGTH5NyaeBg5yD1pwHaDp?w=280&h=172&c=7&r=0&o=5&dpr=1.3&pid=1.7"),
-            ),
+            FlutterLogo(size: 200),
+            CircularProgressIndicator(color: Colors.blue),
           ],
         ),
       ),
